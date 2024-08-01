@@ -270,18 +270,10 @@ Updates an existing task
 
 Retrieves all the user's tasks
 
-|**URL**|
-
-  `/tasks`
-
-- 
-
-  `GET`
-
-- **Headers**
-
-  - `Authorization: Bearer <token>` - The access token obtained after logging in.
-
+|**URL**|**Method**|**Headers**|
+|-------|----------|-----------|
+|`/tasks`|`GET`|`Authorization: Bearer <token>` - The access token obtained after logging in.|
+  
 - **Successful Response**
 
   - Code: 200 (OK)
@@ -337,21 +329,9 @@ Retrieves all the user's tasks
 
 Delete a task.
 
-- **URL**
-
-  `/tasks/:taskId`
-
-- **Method**
-
-  `DELETE`
-
-- **Headers**
-
-  - `Authorization: Bearer <token>` - The access token obtained after logging in.
-
-- **URL Parameters**
-
-  - `taskId` - The ID of the task to delete.
+|**URL**|**Method**|**Headers**|**URL Parameters**|
+|-------|----------|-----------|------------------|
+|`/tasks/:taskId`|`DELETE`|  `Authorization: Bearer <token>` - The access token obtained after logging in.|`taskId` - The ID of the task to delete.|
 
 - **Successful Response**
 
