@@ -72,17 +72,9 @@ Go to:
 
 Register a new user with the credentials provided.
 
-- **URL**
-
-  `/register`
-
-- **Method**
-
-  `POST`
-
-- **Request params**
-
-  `none`
+|**URL**|**Method**|**Request params**|
+|-------|----------|------------------|
+|`/register`|`POST`|`none`|
 
 - **Request Body:**
 
@@ -127,17 +119,9 @@ Register a new user with the credentials provided.
 
 Logs in a user with the provided credentials.
 
-- **URL**
-
-  `/login`
-
-- **Method**
-
-  `POST`
-
-- **Request params**
-
-  `none`
+|**URL**|**Method**|**Request params**|
+|-------|----------|------------------|
+|`/login`|`POST`|`none`|
 
 - **Request Body:**
 
@@ -178,21 +162,9 @@ Logs in a user with the provided credentials.
 
 Creates a new task associated with the specified user.
 
-- **URL**
-
-  `/tasks/:userId`
-
-- **Method**
-
-  `POST`
-
-- **URL Parameters**
-
-  - `userId` - The ID of the user to associate the task with.
-
-- **Headers**
-
-  - `Authorization: Bearer <token>` - The access token obtained after logging in.
+|**URL**|**Method**|**URL Parameters**|**Headers**|
+|-------|----------|------------------|-----------|
+|`/tasks/:userId`|`POST`|`userId` - The ID of the user to associate the task with.|`Authorization: Bearer <token>` - The access token obtained after logging in.|
 
 - **Request Body**
 
@@ -243,21 +215,9 @@ Creates a new task associated with the specified user.
 
 Updates an existing task
 
-- **URL**
-
-  `/tasks/:taskId`
-
-- **Method**
-
-  `PUT`
-
-- **URL Parameters**
-
-  - `taskId` - The ID of the task to be updated.
-
-- **Headers**
-
-  - `Authorization: Bearer <token>` - The access token obtained after logging in.
+|**URL**|**Method**|**URL Parameters**|**Headers**|
+|-------|----------|------------------|-----------|
+|`/tasks/:taskId`|`PUT`|`taskId` - The ID of the task to be updated.|`Authorization: Bearer <token>` - The access token obtained after logging in.|
 
 - **Request Body**
 
@@ -310,11 +270,11 @@ Updates an existing task
 
 Retrieves all the user's tasks
 
-- **URL**
+|**URL**|
 
   `/tasks`
 
-- **Method**
+- 
 
   `GET`
 
